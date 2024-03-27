@@ -20,10 +20,12 @@ jobs:
         distribution: 'zulu'
         
     - name: Build with Gradle
-      run: ./gradlew shadowJar
+      run: 
+        ls -lR
+        ./gradlew shadowJar
       
     - name: Upload archive
       uses: actions/upload-artifact@v1
       with:
-         name: client.jar
-         path: ./build/libs/*.jar
+         name: ESurfingDialer-1.4.0-all.jar
+         path: ./build/libs/ESurfingDialer-1.4.0-all.jar
