@@ -21,3 +21,9 @@ jobs:
         
     - name: Build with Gradle
       run: ./gradlew shadowJar
+      
+    - name: Upload archive
+      uses: actions/upload-artifact@v1
+      with:
+         name: client.jar
+         path: ./build/libs/*.jar
