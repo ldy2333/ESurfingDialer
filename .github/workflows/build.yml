@@ -20,7 +20,7 @@ jobs:
         distribution: 'zulu'
         
     - name: Build with Gradle
-      run: 
+      run: |
         ls -lR
         ./gradlew shadowJar
       
