@@ -43,8 +43,8 @@ class AndroidMock {
             logger.info("Use Dynarmic Backend")
             DynarmicFactory(false)
         } else {
-            logger.info("No Use Unicorn2 Backend")
-            DynarmicFactory(false)
+            logger.info("Use Unicorn2 Backend")
+            Unicorn2Factory(false)
         }
     }
 
